@@ -1,0 +1,12 @@
+.apt_generated/
+
+.metadata
+.recommenders
+
+bin/
+gen/
+
+# Eclipse project files
+.classpath
+.project
+project.properties
