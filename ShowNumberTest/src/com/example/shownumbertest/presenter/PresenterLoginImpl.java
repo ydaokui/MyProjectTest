@@ -8,12 +8,12 @@ import com.example.shownumbertest.view.ViewLogin;
 
 public class PresenterLoginImpl implements PresenterLogin,ListenerLogin{
 
-	private ModelUserLogin userInterface;
+	private ModelUserLogin modeUserLogin;
 	private ViewLogin viewLogin;
 	
 	public PresenterLoginImpl(ViewLogin viewLogin) {
 		super();
-		userInterface = new ModelUserLoginImpl(this);
+		modeUserLogin = new ModelUserLoginImpl(this);
 		this.viewLogin = viewLogin;
 	}
 
@@ -33,7 +33,7 @@ public class PresenterLoginImpl implements PresenterLogin,ListenerLogin{
 		BeanUser user = new BeanUser();
 		user.setName(viewLogin.getUserName());
 		user.setPwd(viewLogin.getUserPwd());
-		userInterface.login(user);
+		modeUserLogin.login(user);
 	}
 
 	@Override

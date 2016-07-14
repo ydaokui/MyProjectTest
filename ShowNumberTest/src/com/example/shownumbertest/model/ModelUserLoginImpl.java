@@ -4,10 +4,10 @@ import com.example.shownumbertest.bean.BeanUser;
 import com.example.shownumbertest.listener.ListenerLogin;
 
 public class ModelUserLoginImpl implements ModelUserLogin {
-	private ListenerLogin linister;
+	private ListenerLogin linisterLogin;
 
 	public ModelUserLoginImpl(ListenerLogin linister) {
-		this.linister = linister;
+		this.linisterLogin = linister;
 	}
 
 	@Override
@@ -21,8 +21,8 @@ public class ModelUserLoginImpl implements ModelUserLogin {
 					statue = true;
 			}
 		}
-		if(linister != null){
-			linister.loginStatus(statue);
+		if(linisterLogin != null){
+			linisterLogin.loginStatus(statue);
 		}
 	}
 
