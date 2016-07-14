@@ -4,5 +4,10 @@
     <string name="app_name">ShowNumberTest</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="str_user_name">name:</string>
+    <string name="str_user_pwd">pwd:</string>
+    <string name="btn_str_begin">开始</string>
+    <string name="btn_str_login">login</string>
+    <string name="btn_str_login_clear">login_clear</string>
 
 </resources>
